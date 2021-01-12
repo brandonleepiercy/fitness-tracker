@@ -1,7 +1,7 @@
 let mongoose = require("mongoose");
 let db = require("../models");
 
-mongoose.connect("mongodb://localhost/fitnesstracker", {
+mongoose.connect("mongodb+srv://skypalace-desktop:sqlROOTpW##@cluster0.7scgu.mongodb.net/fitnesstracker?retryWrites=true&w=majority", {
   useNewUrlParser: true,
   useFindAndModify: false
 });
