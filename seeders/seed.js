@@ -1,8 +1,10 @@
 let mongoose = require("mongoose");
 let db = require("../models");
 
-mongoose.connect("mongodb+srv://skypalace-desktop:sqlROOTpW##@cluster0.7scgu.mongodb.net/fitnesstracker?retryWrites=true&w=majority", {
+mongoose.connect("mongodb://skypalace-desktop:sqlROOTpW##@cluster0.7scgu.mongodb.net/fitnesstracker?retryWrites=true&w=majority", {
   useNewUrlParser: true,
+  useUnifiedTopology: true,
+  useCreateIndex: true,
   useFindAndModify: false
 });
 
